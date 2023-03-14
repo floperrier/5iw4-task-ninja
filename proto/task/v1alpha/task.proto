@@ -7,13 +7,13 @@ message Task {
   string title = 2;
   string description = 3;
   string due_date = 4;
-  string status = 5;
+  Status status = 5;
 }
 
 enum Status {
-  STATUS_TODO = 0;
-  STATUS_DOING = 1;
-  STATUS_DONE = 2;
+  todo = 0;
+  doing = 1;
+  done = 2;
 }
 
 // Generated according to https://cloud.google.com/apis/design/standard_methods
